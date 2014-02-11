@@ -1,0 +1,6 @@
+<html><head><style>@page land { size:landscape; } @page port { size:portrait; } html { page: land; text-align: center; font-size: 60pt; }</style></head><body>
+	<div style="text-align: center">
+	$$FRONT$$
+	</div>
+</body>
+</html>

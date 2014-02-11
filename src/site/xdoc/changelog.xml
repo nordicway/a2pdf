@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<document>
+  <properties>
+    <title>CHANGES</title>
+  </properties>
+
+  <body>
+  <section name="Changelog">
+      <subsection name="2/10/2014: 0.2">
+          <ul>
+			  <li>Added customizable HTML templates</li>
+			  <li>Added documentation</li>
+          </ul>
+		  <p>Known issues:</p>
+		  <ul>
+			<li>If your cards contain HUGE images, they may wrap over to the next page, thus making the deck unprintable. This is indicated by the front side PDF file having a different page count than the back side PDF. Either resize huge images before adding them to your Anki cards or resize them just before PDF export by editing your deck text file manually.</li>
+		  </ul>
+    </subsection>
+    <subsection name="7/19/2013: 0.1">
+    	<p>Initial release</p>
+    </subsection>
+    </section>
+  </body>
+</document>

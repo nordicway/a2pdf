@@ -1,0 +1,20 @@
+# Project/Java/Eclipse related
+.settings/**
+.project
+.classpath
+.metadata
+bin/**
+.svn/**
+target/**
+/target
+/lib
+.ignore
+*.log
+
+# OS specific files
+.DS_Store
+.DS_Store?
+.Trashes
+ehthumbs.db
+Thumbs.db
+
