@@ -54,9 +54,22 @@ public class DeckFileParser {
 
 	private void parseLine(String line) {
 		String[] parts = line.split("\t");
-		// Anki sometimes uses non-breakable spaces. We want text to break so it
-		// does not overflow.
 		// TODO make this configurable
-		deck.addCardSides(parts[0], parts[1].replace("&nbsp;", " "));
+		String front = "";
+		String back = "";
+		// check for cards with bad format, ie. missing content
+		if (parts.length > 0) {
+			front = replaceHTML(parts[0]);
+		}
+		if (parts.length > 1) {
+			back = replaceHTML(parts[1]);
+		}
+		deck.addCardSides(front, back);
+	}
+
+	private String replaceHTML(String s) {
+		// Anki sometimes uses non-breakable spaces. We want text to break
+		// so it does not overflow.
+		return s.replace("&nbsp;", " ");
 	}
 }
